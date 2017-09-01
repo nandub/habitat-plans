@@ -28,6 +28,9 @@ pkg_lib_dirs=(lib)
 
 do_build() {
   ./configure --prefix="$pkg_prefix" \
-              --with-ca-bundle="$(pkg_path_for cacerts)/ssl/certs/cacert.pem"
+              --with-ca-bundle="$(pkg_path_for cacerts)/ssl/certs/cacert.pem" \
+              --enable-libaria2 \
+              --enable-static
+
   make
 }
