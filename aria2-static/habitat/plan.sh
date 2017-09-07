@@ -11,6 +11,7 @@ pkg_shasum=af43688a7fa69f27b8d156b932accdaca847964b0853a62e133d8d84d2f9d0ca
 pkg_dirname=${pkg_distname}-${pkg_version}
 pkg_deps=()
 pkg_build_deps=(
+  nandub/c-ares
   core/cacerts
   core/coreutils
   core/pkg-config
