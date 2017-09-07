@@ -23,8 +23,8 @@ pkg_bin_dirs=(bin)
 pkg_lib_dirs=(lib)
 
 do_prepare() {
-  export SSL_CERT_FILE=$(hab pkg path core/cacerts)/ssl/cert.pem
-  export LD_LIBRARY_PATH=$(hab pkg path core/libffi)/lib
+  export SSL_CERT_FILE=$(pkg_path_for cacerts)/ssl/cert.pem
+  export LD_LIBRARY_PATH=$(pkg_path_for libffi)/lib
 }
 
 do_build() {
