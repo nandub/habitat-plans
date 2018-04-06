@@ -19,9 +19,7 @@ pkg_include_dirs=(include)
 pkg_lib_dirs=(lib)
 
 do_prepare() {
-  CPPFLAGS="$CFLAGS"
-  CFLAGS=""
-  export CPPFLAGS CFLAGS
+  unset CFLAGS
 }
 
 do_build() {
