@@ -1,11 +1,11 @@
 pkg_name=magic-wormhole
 pkg_origin=nandub
-pkg_version="0.10.2"
+pkg_version="0.10.3"
 pkg_maintainer="Fernando Ortiz <nandub+habitat@nandub.info>"
 pkg_license=('MIT')
 pkg_upstream_url=https://github.com/warner/magic-wormhole
 pkg_source=https://github.com/warner/magic-wormhole/archive/${pkg_version}.tar.gz
-pkg_shasum=e26b5649608b74f2d658849a3adecf74a9629c9f8ac86a29686abd5d3a0e0d56
+pkg_shasum=b983585c53c9ea09e0320d4a1473dba104aee9f5683fd0afbda022d9fa65bb1d
 pkg_build_deps=(
   core/cacerts
   core/gcc
