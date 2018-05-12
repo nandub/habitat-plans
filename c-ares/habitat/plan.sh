@@ -19,6 +19,7 @@ pkg_include_dirs=(include)
 pkg_lib_dirs=(lib)
 
 do_prepare() {
+  # c-ares only allows CFLAGS to set CC.
   unset CFLAGS
 }
 
